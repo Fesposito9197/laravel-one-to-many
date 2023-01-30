@@ -11,14 +11,14 @@
       <h5 class="card-title">{{$project->title}}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Progetto eseguito per:{{$project->client_name}}</h6>
       <p class="card-text"> {{$project->description}}</p>
-      <p class="card-text">{{$project->type?->name ?: 'Nessun Tipologia'}}</p>
-      {{-- <p class="card-text">
+      {{-- <p class="card-text">{{$project->type?->name ?: 'Nessun Tipologia'}}</p> --}}
+      <p class="card-text">
         @if ($project->type)
-        Tipologia: <a href="route{{'admin.types.show' , $project->type}}">{{$project->type->name}}</a>
+        Tipologia: <a href="{{route('admin.types.show', $project->type)}}">{{$project->type->name}}</a>
         @else
         Nessun Categoria
         @endif
-      </p> --}}
+      </p>
       <a href="{{route('admin.projects.index')}}" class="btn btn-primary">Go Back</a>
     </div>
   </div>
@@ -32,14 +32,13 @@
               <h5 class="card-title">{{$project->title}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">Progetto eseguito per:{{$project->client_name}}</h6>
               <p class="card-text">{{$project->description}}</p>
-              <p class="card-text">{{$project->type?->name ?: 'Nessun Tipologia'}}</p>
-              {{-- <h3>
+              <p class="card-text">
                 @if ($project->type)
-                Tipologia: <a href="#">{{$project->type->name}}</a>
+                Tipologia: <a href="{{route('admin.types.show', $project->type)}}">{{$project->type->name}}</a>
                 @else
-                Nessun Tipologia
+                Nessun Categoria
                 @endif
-              </h3> --}}
+              </p>
               <a href="{{route('admin.projects.index')}}" class="btn btn-primary">Go Back</a>
             </div>
           </div>
