@@ -11,6 +11,7 @@
       <h5 class="card-title">{{$project->title}}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Progetto eseguito per:{{$project->client_name}}</h6>
       <p class="card-text"> {{$project->description}}</p>
+      <p class="card-text">{{$project->type?->name ?: 'Nessun Tipologia'}}</p>
       {{-- <p class="card-text">
         @if ($project->type)
         Tipologia: <a href="route{{'admin.types.show' , $project->type}}">{{$project->type->name}}</a>
@@ -31,7 +32,7 @@
               <h5 class="card-title">{{$project->title}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">Progetto eseguito per:{{$project->client_name}}</h6>
               <p class="card-text">{{$project->description}}</p>
-              <h3>{{$project->type?->name ?: 'Nessun Tipologia'}}</h3>
+              <p class="card-text">{{$project->type?->name ?: 'Nessun Tipologia'}}</p>
               {{-- <h3>
                 @if ($project->type)
                 Tipologia: <a href="#">{{$project->type->name}}</a>
