@@ -4,7 +4,7 @@
 <div class="container mt-3">
     <div class="d-flex align-items-center">
         <h1>Lista Projects</h1>
-        <a href="{{route('admin.projects.create')}}" class="btn btn-success  ms-3"><i class="fa-regular fa-square-plus fa-lg fa-fw"></i> </a>
+        <a href="{{route('admin.projects.create')}}" class="btn btn-success  ms-3"><i class="fa-regular fa-square-plus fa-lg fa-fw"></i></a>
       </div>
       @include('partials.message')
     <table class="table ">
