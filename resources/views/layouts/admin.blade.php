@@ -105,10 +105,10 @@
                 </li>
                 <li class="nav-item mt-3">
                   <a
-                    class="nav-link text-white {{ Route::currentRouteName() == 'admin.typpes.index' ? 'bg-secondary' : '' }}"
+                    class="nav-link text-white {{ Route::currentRouteName() == 'admin.types.index' ? 'bg-secondary' : '' }}"
                     href="{{route('admin.types.index')}}"
                   >
-                  <i class="fa-solid fa-newspaper fa-lg fa-fw"></i>
+                  <i class="fa-solid fa-hashtag fa-lg fa-fw"></i>
                     Tipologia
                   </a>
                 </li>

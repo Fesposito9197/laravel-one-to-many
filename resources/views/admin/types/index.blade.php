@@ -31,7 +31,7 @@
                       <a href="{{route('admin.types.show' , $type)}}" class="dropdown-item" >info</a>
                   </li>
                   <li>
-                      <a href="{{route('admin.projects.edit' , $type)}}" class="dropdown-item">modifica</a>
+                      <a href="{{route('admin.types.edit' , $type)}}" class="dropdown-item">modifica</a>
                   </li>
                 </ul>
                 <!-- Button trigger modal -->
