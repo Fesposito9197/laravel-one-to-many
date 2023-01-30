@@ -95,14 +95,23 @@
                   </a>
                 </li>
                 <li class="nav-item mt-3">
-                    <a
-                      class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
-                      href="{{route('admin.projects.index')}}"
-                    >
-                    <i class="fa-solid fa-newspaper fa-lg fa-fw"></i>
-                      Projects
-                    </a>
-                  </li>
+                  <a
+                    class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
+                    href="{{route('admin.projects.index')}}"
+                  >
+                  <i class="fa-solid fa-newspaper fa-lg fa-fw"></i>
+                    Projects
+                  </a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a
+                    class="nav-link text-white {{ Route::currentRouteName() == 'admin.typpes.index' ? 'bg-secondary' : '' }}"
+                    href="{{route('admin.types.index')}}"
+                  >
+                  <i class="fa-solid fa-newspaper fa-lg fa-fw"></i>
+                    Tipologia
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
