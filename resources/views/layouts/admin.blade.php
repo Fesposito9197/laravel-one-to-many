@@ -108,7 +108,7 @@
                     class="nav-link text-white {{ Route::currentRouteName() == 'admin.types.index' ? 'bg-secondary' : '' }}"
                     href="{{route('admin.types.index')}}"
                   >
-                  <i class="fa-solid fa-hashtag fa-lg fa-fw"></i>
+                  <i class="fa-solid fa-bars fa-lg fa-fw"></i>
                     Tipologia
                   </a>
                 </li>
